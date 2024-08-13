@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #121528;
+    min-height: 100vh;
+}
+header{
+    height: 5vw;
+    margin-bottom: 7vw;
+}
+svg{
+    height: 6vw;
+}
+header img{
+    width: 23vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maisinfo{
+    background-color: #273144;
+    height: 11vw;
+    width: 26.5%;
+    border-radius: 1.5vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5vw;
+    align-items: center;
+}
+.maisinfo h4{
+    font-size: 95%;
+}
+.detalhes{
+    display: flex;
+    gap: 1vw;
+    font-size: 1.1vw;
+    gap: 1vw;
+    align-items: center;
+    width: 100%;
+}
+.cardmodulo{
+    width: 90vw;
+    border-radius: 2vw 2vw 0 0;
+    background-color: #1B2435;
+    min-height: 7vw;
+    margin-top: -5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.meio{
+    background-color: #1B2435;
+    width: 84vw;
+    min-height: 34vw;
+    margin-top: 2vw;
+    padding: 3vw;
+    padding-bottom: 0vw;
+    display: flex;
+    gap: 3vw;
+    flex-direction: column;
+}
+
+#myChart{
+    width: 36vw !important;
+    max-width: 43vw !important;
+    display: block;
+    height: 22vw !important;
+    background-color: #ffff !important;
+    padding: 3vw !important;
+    border-radius: 2vw !important;
+}
+
+#bar-chart{
+    width: 36vw !important;
+    max-width: 43vw !important;
+    display: block;
+    height: 22vw !important;
+    background-color: #ffff !important;
+    padding: 3vw !important;
+    border-radius: 2vw !important;
+}
+
+#bar-chart2{
+    width: 33vw !important;
+    max-width: 43vw !important;
+    display: block;
+    height: 22vw !important;
+    background-color: #ffff !important;
+    padding: 3vw !important;
+    border-radius: 2vw !important;
+}
+
+#myChart2{
+    width: 33vw !important;
+    max-width: 43vw !important;
+    display: block;
+    height: 22vw !important;
+    background-color: #ffff !important;
+    padding: 3vw !important;
+    border-radius: 2vw !important;
+}
+
+.modulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar{
+    background-color: #1B2435;
+    width: 30vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    box-shadow: -9px 10px 36px 2px rgba(0, 0, 0, 0.384);
+    transition: 1s;
+}
+
+.modulo{
+    width: 22vw;
+    height: 11vw;
+    border-radius: 1.5vw;
+    position: relative;
+    z-index: 10;
+    padding: 2vw;
+}
+.modulos-card{
+    display: flex;
+    gap: 3vw;
+}
+
+.card2{
+    background-color: #273144;
+    border-radius: 1.5vw;
+    margin-top: 2vw;
+    display: none;
+}
+
+.divide{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 90vw;
+    gap: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+.historico{
+    background-color: #1B2435;
+    border-radius: 0 0 2vw 2vw;
+    padding: 3vw;
+}
+
+.atualizacao{
+    background-color: #1B2435;
+    border-radius: 0 0 2vw 2vw;
+    padding: 3vw;
+    height: 25vw;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    gap: 3vw;
+}
+.info2{
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    gap: 3vw;
+}
+.info3{
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    gap: 3vw;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 2vw;
+}
+
+::-webkit-scrollbar-track {
+background: #12152800;
+}
+
+::-webkit-scrollbar-thumb {
+background: #12152800;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #55555500;
+}
+
+.vermais{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.linha{
+    width: 95%;
+    height: .1vw;
+    background-color: white;
+}
+
+.alinha{
+    display: grid;
+    grid-template-columns: .8fr 1fr .9fr 1.2fr;
+    justify-items: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+}
+
+.alinha4{
+    display: grid;
+    grid-template-columns: .8fr 1fr .9fr 1.2fr;
+    justify-items: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+}
+.volta{
+    display: none;
+    justify-content: flex-end;
+}
+.alinha3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 95%;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.pinfo{
+    font-size: 5vw;
+    font-weight: 500;
+}
+.meio h3{
+    font-size: 1.8vw;
+}
+
+.some{
+    display: flex;
+    gap: 1vw;
+}
+.mensagem-item{
+    display: grid;
+    grid-template-columns: .8fr 1fr .9fr 1.2fr;
+    justify-items: center;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+}
+.some2{
+    display: flex;
+    gap: 2vw;
+    display: none;
+}
+
+.listagem{
+    display: flex;
+    gap: 16vw;
+    justify-content: space-between;
+
+}
+
+
+#date-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: -1vw;
+    width: 27vw;
+    height: 15vw;
+    overflow-y: auto;
+}
+
+.mensagem-item2{
+    display: grid;
+    grid-template-columns: .8fr 1fr .9fr 1.2fr;
+    justify-items: center;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+}
+
+
+.alinha2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+}
+.graficos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bolav{
+    background: #C40202;
+    padding: 1.3vw;
+    padding-bottom: 1.1vw;
+    border-radius: 50%;
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+  
+  
+  .master{
+    color:black;
+    float:right;
+}
+
+.sidebarIcon{
+    display: none;
+}
+.textos{
+    display: flex;
+    padding-left: 1.5vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3vw;
+}
+.alerta{
+    display: flex;
+    background: white;
+    width: 80%;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+.sidebar.open {
+    display: none;
+}
+.bolanotifica{
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: #C40202;
+    position: relative;
+    top: -15.2vw;
+    left: 92.5vw;
+    border-radius: 5vw;
+}
+.bolanotifica2{
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: #C40202;
+    position: relative;
+    top: -15.2vw;
+    left: 92.5vw;
+    border-radius: 5vw;
+    display: none;
+}
+
+.icon2{
+    width: 3vw;
+    cursor: pointer;
+    position: fixed;
+    top: 2.8vw;
+    left: 90vw;
+    z-index: 100;
+    display: none;
+}
+
+.alinha{
+    font-size: 1.2vw;
+}
+body {
+    opacity: 0; /* Começa com opacidade 0 para esconder os elementos */
+    animation: fade-in 1s forwards; /* Aplica a animação para todos os elementos dentro do container */
+}
+
+.notificatudo{
+    margin-bottom: 2vw;
+}
+
+.animate {
+    opacity: 0; /* Inicialmente esconde os elementos */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate:nth-child(1) {
+    animation-delay: 0.3s; /* Ajusta o atraso de animação para cada elemento */
+}
+
+.animate:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.animate:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.todasinfo{
+    height: 100%;width: 93%;display: flex;gap: 2.8vw; display: none;
+}
